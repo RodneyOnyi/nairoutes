@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_row_selector"
+    android:padding="8dp" >
+
+
+    <!-- Route -->
+    <TextView
+        android:id="@+id/route"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textSize="@dimen/route"
+        android:textStyle="bold" />
+
+    <!-- Stage -->
+
+    <TextView
+        android:id="@+id/stage"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/route"
+        android:layout_marginTop="1dip"
+        android:textSize="@dimen/stage" />
+    
+    <!-- Bus_Stop -->
+    <TextView
+        android:id="@+id/bus_stop"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/stage"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/bus_stop"
+        android:textSize="@dimen/bus_stop" />
+
+    <!-- Fare -->
+    <TextView
+        android:id="@+id/fare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/fare"
+        android:textSize="@dimen/fare" />
+
+</RelativeLayout>
